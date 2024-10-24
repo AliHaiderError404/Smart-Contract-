@@ -1,0 +1,134 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "Address",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "Bet_Value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "enum BettingSite.Teams",
+						"name": "Chosen_Team",
+						"type": "uint8"
+					}
+				],
+				"name": "Done_Bet",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "Address",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "Withdraw_Value",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "Withdraw_Time",
+						"type": "uint256"
+					}
+				],
+				"name": "Withdraw_Amount",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum BettingSite.Status",
+						"name": "state",
+						"type": "uint8"
+					}
+				],
+				"name": "Change_Status",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "enum BettingSite.Teams",
+						"name": "Team",
+						"type": "uint8"
+					}
+				],
+				"name": "Place_Bet",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "Withdraw",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SmartContract/BettingA.sol": "BettingSite"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SmartContract/BettingA.sol": {
+			"keccak256": "0x280450f3c4dba3aa96891a461a1fcdfdf21c74659d8a22380056df3556f7a879",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://690c807809bbf511c0f858d884f3f06f742346f3c5442972d8f7d95c688ecb32",
+				"dweb:/ipfs/QmQGdDFWHBLpdzvkPuX6nN3Bk8PJKunDPZzXqbp7zwbdvJ"
+			]
+		}
+	},
+	"version": 1
+}
